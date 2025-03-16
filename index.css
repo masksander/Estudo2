@@ -1,0 +1,72 @@
+:root{
+  --color-white: #fff;
+  --color-blue: #74b6f8;
+  --color-blue2: #368fe9;
+  --color-gray: #eeeeee;
+}
+
+body{
+  all:unset;
+  font-family: arial, helvetica, Sans-Serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #74b6f8;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4rem;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 30px, 100px;
+  color: var(--color-white);
+  width: 500px;
+  height: 100%;
+}
+
+
+.content input{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--color-white);
+  font-size: 1rem;
+  padding: .4rem;
+  border-bottom: 1px solid var(--color-white);
+  text-align: center;
+  width: 50%;
+}
+
+.content input::placeholder{
+  color: var(--color-white);
+}
+
+.content input:focus{
+  border-bottom: 2px solid var(--color-blue);
+}
+
+.content button{
+  padding: .8rem;
+  width: 10em;
+  height: 2em;
+  font-size: 200%;
+  background-color: var(--color-blue2);
+  border: none;
+  border-radius: 20px;
+  color: var(--color-white);
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: .4s;
+  display: center;
+  outline: none;
+}
+
+.content button:hover{
+  background-color: var(--color-blue);
+  
+}
